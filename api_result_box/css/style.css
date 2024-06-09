@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.api-result-show {
+    width: 100%;
+    max-width: 540px;
+    background-color: azure;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.api-box-header {
+    display: flex;
+}
