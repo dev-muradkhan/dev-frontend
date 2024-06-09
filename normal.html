@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Api Navigation</title>
+    <style>
+        .dropdown-api-nav {
+            top: 37px;
+            right: 0;
+            display: none;
+        }
+
+        .dropdown-api-nav ul {
+            box-shadow: 0 80px 80px 1px #cccccc;
+        }
+
+        .api-nav-bar:hover .dropdown-api-nav {
+            display: block;
+        }
+
+        .api-nav-counter {
+            background-color: #cccccc;
+            color: #313131;
+        }
+
+        .api-nav-dropdown span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body class="m-0">
+    <section class="bg-gray-800 font-sans">
+        <nav class="w-full max-w-6xl mx-auto h-14 relative">
+            <ul class="flex flex-wrap p-0 list-none justify-around m-0 pr-32 h-14">
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-regular fa-futbol mr-2"></i> Football
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+             
+                    </a>
+                </li>
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-solid fa-basketball mr-2"></i> Basketball
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-solid fa-table-tennis-paddle-ball mr-2"></i> Tennis
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-solid fa-hockey-puck mr-2"></i> Hockey
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-solid fa-volleyball mr-2"></i> Volleyball
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </li>
+                <li class="flex justify-center min-w-[100px]">
+                    <a href="#" class="flex items-center text-white text-lg px-4 py-3 relative transition-all duration-500
+                    group inline-block overflow-hidden font-medium focus:outline-none focus:ring active:bg-[#cc0000] active:text-white
+                    ">
+                        <i class="fa-solid fa-baseball-bat-ball mr-2"></i> Baseball
+                        <span class="ease absolute bottom-0 left-0 h-0 w-0 border-b-4 border-[#cc0000] transition-all duration-200 group-hover:w-full"></span>
+                    </a>
+                </li>
+
+                <li class="flex justify-center min-w-[100px] absolute top-0 right-4 h-full">
+                    <button class="bg-transparent border-none text-white cursor-pointer text-lg flex items-center" id="api-nav-dropdown">
+                        More <span><i class="fa-solid fa-angle-down ml-2"></i></span>
+                    </button>
+                </li>
+            </ul>
+
+            <div class="dropdown-api-nav absolute bg-transparent rounded-b-lg shadow-lg w-full">
+                <ul class="flex flex-wrap p-8 list-none w-full">
+                    <li class="w-full xl:w-[25%] md:w-[33.33%] sm:w-[50%] flex justify-start mb-6">
+                        <a href="#" class="text-gray-800 no-underline hover:text-[#cc0000]">
+                            <i class="fa-regular fa-futbol mr-2"></i> Football <span class="api-nav-counter py-1 px-2 rounded ml-2 text-xs">5</span>
+                        </a>
+                    </li>
+                    <li class="w-full xl:w-[25%] md:w-[33.33%] sm:w-[50%] flex justify-start mb-6">
+                        <a href="#" class="text-gray-800 no-underline hover:text-[#cc0000]">
+                            <i class="fa-regular fa-futbol mr-2"></i> Game Name <span class="api-nav-counter py-1 px-2 rounded ml-2 text-xs">0</span>
+                        </a>
+                    </li>
+                    <li class="w-full xl:w-[25%] md:w-[33.33%] sm:w-[50%] flex justify-start mb-6">
+                        <a href="#" class="text-gray-800 no-underline hover:text-[#cc0000]">
+                            <i class="fa-regular fa-futbol mr-2"></i> Game Name <span class="api-nav-counter py-1 px-2 rounded ml-2 text-xs">0</span>
+                        </a>
+                    </li>
+                    <li class="w-full xl:w-[25%] md:w-[33.33%] sm:w-[50%] flex justify-start mb-6">
+                        <a href="#" class="text-gray-800 no-underline hover:text-[#cc0000]">
+                            <i class="fa-regular fa-futbol mr-2"></i> Game Name <span class="api-nav-counter py-1 px-2 rounded ml-2 text-xs">0</span>
+                        </a>
+                    </li>
+                    <!-- Add more items similarly -->
+                </ul>
+            </div>
+        </nav>
+    </section>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/theme.js"></script>
+</html>

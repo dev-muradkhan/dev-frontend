@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.position-relative {
+    position: relative;
+}
+.position-absolute {
+    position: absolute;
+}
+.api-nav {
+    background-color: #313131;
+    font-family: 'Robot', sans-serif;
+}
+.api-nav-bar {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    max-height: 56px;
+}
+
+.api-nav-bar .api-ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    margin: 0;
+    padding-right: 130px;
+    overflow: hidden;
+    max-height: 56px;
+}
+
+.api-nav-bar .api-ul .api-li {
+    display: flex;
+    justify-content: center;
+    min-width: 100px;
+
+}
+
+.api-nav-bar .api-ul .api-li:last-child{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.api-nav-bar .api-ul .api-li a{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 18px 15px;
+    position: relative;
+    transition: .5s;
+}
+
+.api-nav-bar .api-ul .api-li a i {
+    margin-right: 8px;
+}
+.api-nav-bar .api-ul .api-li:hover a {
+    color: #cccccc;
+}
+
+.api-nav-bar .api-ul .api-li.active > a::after{ 
+    content: "";
+    border-bottom: 5px solid #cc0000;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.api-nav-bar .api-ul .api-li a::after{
+    content: "";
+    border-bottom: 5px solid #cc0000;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: auto;
+    right: 0;
+    z-index: 1;
+    transition: .3s cubic-bezier(.785, .135, .15, .86);
+    -webkit-transition: .3s cubic-bezier(.785, .135, .15, .86);
+    -moz-transition: .3s cubic-bezier(.785, .135, .15, .86);
+    -o-transition: .3s cubic-bezier(.785, .135, .15, .86);
+    -ms-transition: .3s cubic-bezier(.785, .135, .15, .86);
+    bottom: 1px;
+}
+
+.api-nav-bar .api-ul .api-li a:hover::after{
+    width: 100%;
+    right: auto;
+    left: 0;
+    bottom: 0;
+}
+
+.api-nav-dropdown {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.api-nav-dropdown span {
+    margin-left: 10px;
+}
+
+/* dropdown */
+.dropdown-api-nav{
+    top: 37px;
+    right: 0;
+    margin: 0;
+    padding: 30px;
+    /* border: 1px solid #888888; */
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    -webkit-box-shadow: 0 80px 80px 1px #CCCCCC;
+    box-shadow: 0 80px 80px 1px #CCCCCC;
+    display: none;
+    width: 100%;
+}
+.dropdown-api-nav ul {
+    padding: 30px 30px 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-api-nav ul li{
+    width: 100%;
+    max-width: 25%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.dropdown-api-nav ul > li > a {
+    color: #313131 !important;
+    text-decoration: none;
+}
+
+.dropdown-api-nav ul > li > a:hover {
+    color: #cc0000 !important;
+}
+
+.api-nav-bar .api-ul .api-li:hover .dropdown-api-nav ul > li > a::after {
+    display: none !important;
+}
+
+
+.img-api-nav {
+    width: 30px;
+    height: 30px;
+    color: #ffffff;
+}
+
+.api-nav-counter {
+    background-color: #cccccc;
+    color: #313131;
+    padding: 3px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 992px) {
+    .dropdown-api-nav ul li {
+        max-width: 33.33%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dropdown-api-nav ul li {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+
+    .dropdown-api-nav ul {
+        padding: 0;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .dropdown-api-nav ul li {
+        max-width: 100%;
+      }
+    .dropdown-api-nav ul li a {
+        font-size: 14px;
+    }
+}
