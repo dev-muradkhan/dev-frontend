@@ -10,3 +10,7 @@
     text-decoration: none;
     color: white;
  }
+
+ .dropdown-api-nav {
+    z-index: 9999;
+ }
