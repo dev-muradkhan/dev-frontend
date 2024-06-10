@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: normal;
+    background-color: #eee;
+  }
+ 
+  .sidebar-navigation ul li a {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .sidebar-navigation ul li a i {
+
+    transform: translateY(-50%);
+
+  }
+.sidebar-navigation ul li.selected > a {
+    background-color: #f2f2f2;
+    color: #495d62;
+    border-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .sidebar-navigation ul li ul.open {
+    display: block;
+  }
+ 
+  .sidebar-navigation ul li ul li.selected.selected--last > a {
+    background-color: #94aab0;
+    color: #fff;
+  }
+  .sidebar-navigation ul li ul li.selected.selected--last > a:before {
+    background-color: #fff;
+  }
+
+  
