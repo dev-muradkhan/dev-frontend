@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Result Show Box</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+    <div class="api-result-show max-w-[540px] w-full bg-[#f0ffff] uppercase">
+        <div class="api-box-header flex justify-between items-center px-2 py-2 bg-[#cccccc]">
+            <ul class="flex">
+                <li class="mr-1">
+                  <a class="inline-block border border-[#CC0000] rounded py-1 px-2 bg-[#CC0000] text-white font-bold text-[12px] sm:font-normal sm:text-sm" href="#" title="">All</a>
+                </li>
+                <li class="mr-1">
+                  <a class="inline-block border border-[#cccccc] rounded hover:border-[#CC0000] text-black hover:bg-[#CC0000] hover:text-white py-1 px-2 font-bold text-[12px] sm:font-normal sm:text-sm" href="#" title="">Live (54)</a>
+                </li>
+                <li class="mr-1 hidden sm:block">
+                    <a class="inline-block border border-[#cccccc] rounded hover:border-[#CC0000] text-black hover:bg-[#CC0000]  hover:text-white py-1 px-2 font-bold text-[12px] sm:font-normal sm:text-sm" href="#" title="">Finished</a>
+                </li>
+                <li class="mr-1 hidden sm:block">
+                    <a class="inline-block border border-[#cccccc] rounded hover:border-[#CC0000] text-black hover:bg-[#CC0000]  hover:text-white py-1 px-2 font-bold text-[12px] sm:font-normal sm:text-sm" href="#" title="">Scheduled</a>
+                </li>
+              </ul>
+
+            <div class="right-slide-option font-bold text-[12px] sm:font-normal sm:text-sm flex items-center">
+                Odds
+                <div class="onOff-Switcher ml-2.5">
+                    <label for="toggle-api-odds" class="switch" id="odds-show">
+						<input class="switch-input" type="checkbox" id="toggle-api-odds">
+						<span class="switch-label" data-on="On" data-off="Off"></span> <span class="switch-handle"></span> 
+                    </label>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- League Name -->
+        <div class="api-content-inner p-2 border-b">
+            <div class="league-box normal-case py-4">
+                <div class="leagueName flex p-1">
+                    <div class="leagueFlag flex w-full max-w-[50px] sm:max-w-[60px] justify-center items-center">
+                        <img class="rounded-[50%]" src="images/es.png" alt="League Icon" width="42" height="42">
+                    </div>
+                    <div class="league-name flex flex-col w-full max-w-[392px]  sm:max-w-[424px] pl-2.5 sm:p-0">
+                        <span class="text-[12px] font-bold">Game Name</span>
+                        <span class="text-[12px]">Sub Title Name</span>
+                    </div>
+                    <div class="pin-icon w-full max-w-[20px] sm:max-w-[40px] flex justify-center items-center text-[#888888] text-[22px]">
+                        <button type="button" title="">
+                            <i class="fa-solid fa-thumbtack"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <!-- Game One -->
+                <a class="game-dtails-link hover:bg-[#f2f2f2] block" href="#" title="">
+                    <div class="game-details flex py-2 my-2">
+                        <div class="gameTime w-full max-w-[50px] sm:max-w-[60px] justify-center items-center border-r border-[#888888] flex-col text-[12px] flex py-2">
+                                19:20
+                                <br>
+                                <span class="text-[#CC0000]">82'</span>
+                                <br>
+                                <button type="button" class="block sm:hidden text-[22px] mt-[5px]">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                        </div>
+
+                        <div class="team-Details w-full max-w-[420px]">
+                            <div class="px-2 py-2 flex justify-between">
+                                <div class="team-name-block max-w-[130px] sm:max-w-[203px] flex flex-col w-full justify-center">
+                                    <div class="team-block items-start flex sm:items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                    <div class="team-block flex team-block flex items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                </div>
+                                <div class="odds-block_part w-full max-w-[70px] sm:max-w-[203px]">
+                                    <div class="odds-block flex justify-center w-full text-[12px] flex-col items-end sm:items-center sm:flex-row pr-1 sm:p-0">
+
+                                        <!-- Odds One -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            1
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Two -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            X
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Three -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            2
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                
+        
+                                <div class="game-result justify-center items-center w-full flex flex-col text-[#CC0000] max-w-[20px] text-[14px] border-l border-[#888888] sm:border-l-0">
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="game-notification w-full max-w-[40px] border-l border-[#888888] flex p-1 justify-center text-[22px] items-center text-[#888888] hidden sm:block">
+                            <button type="button" class="pl-[6px]" title="">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Game Two -->
+                <a class="game-dtails-link hover:bg-[#f2f2f2] block" href="#" title="">
+                    <div class="game-details flex py-2 my-2">
+                        <div class="gameTime w-full max-w-[50px] sm:max-w-[60px] justify-center items-center border-r border-[#888888] flex-col text-[12px] flex py-2">
+                                19:20
+                                <br>
+                                <span class="text-[#CC0000]">82'</span>
+                                <br>
+                                <button type="button" class="block sm:hidden text-[22px] mt-[5px]">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                        </div>
+
+                        <div class="team-Details w-full max-w-[420px]">
+                            <div class="px-2 py-2 flex justify-between">
+                                <div class="team-name-block max-w-[130px] sm:max-w-[203px] flex flex-col w-full justify-center">
+                                    <div class="team-block items-start flex sm:items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                    <div class="team-block flex team-block flex items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                </div>
+                                <div class="odds-block_part w-full max-w-[70px] sm:max-w-[203px]">
+                                    <div class="odds-block flex justify-center w-full text-[12px] flex-col items-end sm:items-center sm:flex-row pr-1 sm:p-0">
+
+                                        <!-- Odds One -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            1
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Two -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            X
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Three -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            2
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                
+        
+                                <div class="game-result justify-center items-center w-full flex flex-col text-[#CC0000] max-w-[20px] text-[14px] border-l border-[#888888] sm:border-l-0">
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="game-notification w-full max-w-[40px] border-l border-[#888888] flex p-1 justify-center text-[22px] items-center text-[#888888] hidden sm:block">
+                            <button type="button" class="pl-[6px]" title="">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Game Three -->
+                <a class="game-dtails-link hover:bg-[#f2f2f2] block" href="#" title="">
+                    <div class="game-details flex py-2 my-2">
+                        <div class="gameTime w-full max-w-[50px] sm:max-w-[60px] justify-center items-center border-r border-[#888888] flex-col text-[12px] flex py-2">
+                                19:20
+                                <br>
+                                <span class="text-[#CC0000]">82'</span>
+                                <br>
+                                <button type="button" class="block sm:hidden text-[22px] mt-[5px]">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                        </div>
+
+                        <div class="team-Details w-full max-w-[420px]">
+                            <div class="px-2 py-2 flex justify-between">
+                                <div class="team-name-block max-w-[130px] sm:max-w-[203px] flex flex-col w-full justify-center">
+                                    <div class="team-block items-start flex sm:items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                    <div class="team-block flex team-block flex items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                </div>
+                                <div class="odds-block_part w-full max-w-[70px] sm:max-w-[203px]">
+                                    <div class="odds-block flex justify-center w-full text-[12px] flex-col items-end sm:items-center sm:flex-row pr-1 sm:p-0">
+
+                                        <!-- Odds One -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            1
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Two -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            X
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Three -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            2
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                
+        
+                                <div class="game-result justify-center items-center w-full flex flex-col text-[#CC0000] max-w-[20px] text-[14px] border-l border-[#888888] sm:border-l-0">
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="game-notification w-full max-w-[40px] border-l border-[#888888] flex p-1 justify-center text-[22px] items-center text-[#888888] hidden sm:block">
+                            <button type="button" class="pl-[6px]" title="">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+
+
+        <!-- League Name -->
+        <div class="api-content-inner p-2 border-b">
+            <div class="league-box normal-case py-4">
+                <div class="leagueName flex p-1">
+                    <div class="leagueFlag flex w-full max-w-[50px] sm:max-w-[60px] justify-center items-center">
+                        <img class="rounded-[50%]" src="images/es.png" alt="League Icon" width="42" height="42">
+                    </div>
+                    <div class="league-name flex flex-col w-full max-w-[392px]  sm:max-w-[424px] pl-2.5 sm:p-0">
+                        <span class="text-[12px] font-bold">Game Name</span>
+                        <span class="text-[12px]">Sub Title Name</span>
+                    </div>
+                    <div class="pin-icon w-full max-w-[20px] sm:max-w-[40px] flex justify-center items-center text-[#888888] text-[22px]">
+                        <button type="button" title="">
+                            <i class="fa-solid fa-thumbtack"></i>
+                        </button>
+                        
+                    </div>
+                </div>
+
+                <!-- Game One -->
+                <a class="game-dtails-link hover:bg-[#f2f2f2] block" href="#" title="">
+                    <div class="game-details flex py-2 my-2">
+                        <div class="gameTime w-full max-w-[50px] sm:max-w-[60px] justify-center items-center border-r border-[#888888] flex-col text-[12px] flex py-2">
+                                19:20
+                                <br>
+                                <span class="text-[#CC0000]">82'</span>
+                                <br>
+                                <button type="button" class="block sm:hidden text-[22px] mt-[5px]" title="">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                        </div>
+
+                        <div class="team-Details w-full max-w-[420px]">
+                            <div class="px-2 py-2 flex justify-between">
+                                <div class="team-name-block max-w-[130px] sm:max-w-[203px] flex flex-col w-full justify-center">
+                                    <div class="team-block items-start flex sm:items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                    <div class="team-block flex team-block flex items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                </div>
+                                <div class="odds-block_part w-full max-w-[70px] sm:max-w-[203px]">
+                                    <div class="odds-block flex justify-center w-full text-[12px] flex-col items-end sm:items-center sm:flex-row pr-1 sm:p-0">
+
+                                        <!-- Odds One -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            1
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Two -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            X
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Three -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            2
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                
+        
+                                <div class="game-result justify-center items-center w-full flex flex-col text-[#CC0000] max-w-[20px] text-[14px] border-l border-[#888888] sm:border-l-0">
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="game-notification w-full max-w-[40px] border-l border-[#888888] flex p-1 justify-center text-[22px] items-center text-[#888888] hidden sm:block">
+                            <button type="button" class="pl-[6px]" title="">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Game Two -->
+                <a class="game-dtails-link hover:bg-[#f2f2f2] block" href="#">
+                    <div class="game-details flex py-2 my-2">
+                        <div class="gameTime w-full max-w-[50px] sm:max-w-[60px] justify-center items-center border-r border-[#888888] flex-col text-[12px] flex py-2">
+                                19:20
+                                <br>
+                                <span class="text-[#CC0000]">82'</span>
+                                <br>
+                                <button type="button" class="block sm:hidden text-[22px] mt-[5px]" title="">
+                                    <i class="fa-regular fa-bell"></i>
+                                </button>
+
+                        </div>
+
+                        <div class="team-Details w-full max-w-[420px]">
+                            <div class="px-2 py-2 flex justify-between">
+                                <div class="team-name-block max-w-[130px] sm:max-w-[203px] flex flex-col w-full justify-center">
+                                    <div class="team-block items-start flex sm:items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                    <div class="team-block flex team-block flex items-center text-[12px] mb-[10px] sm:mb-[3px]">
+                                        <div class="team-img w-full max-w-[16px] mr-2">
+                                            <img class="rounded[50%]" src="images/es.png" width="18" height="16" alt="">
+                                        </div>
+                                        
+                                        Team 1 Name Here
+                                    </div>
+                                </div>
+                                <div class="odds-block_part w-full max-w-[70px] sm:max-w-[203px]">
+                                    <div class="odds-block flex justify-center w-full text-[12px] flex-col items-end sm:items-center sm:flex-row pr-1 sm:p-0">
+
+                                        <!-- Odds One -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            1
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Two -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            X
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+
+                                        <!-- Odds Three -->
+                                        <div class="odds-content flex flex-row mb-[5px] sm:flex-col sm:mb-0 items-center mr-[3px] font-bold mr-3">
+                                            2
+                                            <div class="odds-pp px-[5px] border border-[#CC0000] rounded[3px] text-[#CC0000] ml-[5px] sm:ml-0">
+                                                5.50
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--  -->
+                                
+        
+                                <div class="game-result justify-center items-center w-full flex flex-col text-[#CC0000] max-w-[20px] text-[14px] border-l border-[#888888] sm:border-l-0">
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                    <div class="mb-[10px] sm:mb-[3px]">2</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="game-notification w-full max-w-[40px] border-l border-[#888888] flex p-1 justify-center text-[22px] items-center text-[#888888] hidden sm:block">
+                            <button type="button" class="pl-[6px]" title="">
+                                <i class="fa-regular fa-bell"></i>
+                            </button>
+                            
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <script src="js/theme.js"></script>
+</body>
+</html>
