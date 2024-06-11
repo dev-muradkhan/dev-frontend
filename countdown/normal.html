@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Apple Sidebar</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+
+    <div class="widget-box w-full max-w-[432px]">
+      <a href="#" class="block">
+        <div class="counter-widget w-full p-[15px] rounded-[10px] pb-7 bg-[#888888] bg-[url('/images/bg-countdown.jpg')] bg-center bg-no-repeat bg-cover">
+          <div class="countdown-title flex items-center text-[22px] font-bold text-white mb-4">
+            <img src="images/image.png" width="48" height="48" alt="" class="rounded-[50%] mr-[15px]">
+            League Name
+          </div>
+          <div class="counter text-[#333333] rounded-[5px] py-[7px] px-[15px] bg-white bg-opacity-10" >
+            <ul class="flex justify-center">
+              <li class="text-[12px] p-[6px] sm:p-[1em] uppercase flex items-center flex-col text-white">
+                <span id="days" class="border border-[#666666] flex text-[22px] text-white bg-black bg-opacity-50 py-[7px] px-[15px] font-bold justify-center items-center mb-[10px] w-full min-w-[60px]"></span>days</li>
+              <li class="text-[12px] p-[6px] sm:p-[1em] uppercase flex items-center flex-col text-white">
+                <span id="hours" class="border border-[#666666] flex text-[22px] text-white bg-black bg-opacity-50 py-[7px] px-[15px] font-bold justify-center items-center mb-[10px] w-full min-w-[60px]"></span>Hours</li>
+              <li class="text-[12px] p-[6px] sm:p-[1em] uppercase flex items-center flex-col text-white">
+                <span id="minutes" class="border border-[#666666] flex text-[22px] text-white bg-black bg-opacity-50 py-[7px] px-[15px] font-bold justify-center items-center mb-[10px] w-full min-w-[60px]"></span>Minutes</li>
+              <li class="text-[12px] p-[6px] sm:p-[1em] uppercase flex items-center flex-col text-white">
+                <span id="seconds" class="border border-[#666666] flex text-[22px] text-white bg-black bg-opacity-50 py-[7px] px-[15px] font-bold justify-center items-center mb-[10px] w-full min-w-[60px]"></span>Seconds</li>
+            </ul>
+          </div>
+        </div>  
+      </a>
+    </div>
+    
+
+    
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/theme.js"></script>
+  </body>
+</html>
