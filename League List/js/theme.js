@@ -1,8 +1,8 @@
 (function( $ ) {
 	'use strict';
 
-$(function(){
-   var $ul   =   $('.sidebar-navigation > ul');
+  $(function(){
+    var $ul   =   $('.sidebar-navigation > ul');
     
     $ul.find('li a').click(function(e){
       var $li = $(this).parent();
@@ -13,22 +13,22 @@ $(function(){
         if($li.hasClass('selected')){
           $li.removeClass('selected').find('li').removeClass('selected');
           $li.find('ul').slideUp(400);
-          $li.find('a .fa-solid').addClass('mdi-flip-v');
+          $li.find('a i').removeClass('mdi-flip-v');
         }else{
           
           if($li.parents('li.selected').length == 0){
             $ul.find('li').removeClass('selected');
             $ul.find('ul').slideUp(400);
-            $ul.find('li a .fa-solid').addClass('mdi-flip-v');
+            $ul.find('li a i').removeClass('mdi-flip-v');
           }else{
             $li.parent().find('li').removeClass('selected');
             $li.parent().find('> li ul').slideUp(400);
-            $li.parent().find('> li a .fa-solid').addClass('mdi-flip-v');
+            $li.parent().find('> li a i').removeClass('mdi-flip-v');
           }
           
           $li.addClass('selected');
           $li.find('>ul').slideDown(400);
-          $li.find('>a>em').addClass('mdi-flip-v');
+          $li.find('>a>i').addClass('mdi-flip-v');
         }
       }
     });
@@ -66,7 +66,7 @@ $(function(){
         
           li.addClass('selected');
           ul.addClass('open');
-          li.find('>a>em').addClass('mdi-flip-v');
+          li.find('>a>i').addClass('mdi-flip-v');
         
         if(ul.closest('li').length){
           opener(ul.closest('li'));

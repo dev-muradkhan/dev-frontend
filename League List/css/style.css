@@ -17,7 +17,8 @@ body {
   }
   .sidebar-navigation ul li a i {
 
-    transform: translateY(-50%);
+    /* transform: translateY(-50%); */
+    transition: .2s;
 
   }
 .sidebar-navigation ul li.selected > a {
@@ -38,4 +39,8 @@ body {
     background-color: #fff;
   }
 
+
+  .mdi-flip-v {
+    transform: rotate(180deg);
+  }
   
